@@ -1,0 +1,8 @@
+@import './styles/variables';
+
+
+.container-fluid{
+    min-height: 100vh;
+    padding: 1rem;
+    background-color: $Very-light-gray;
+}

@@ -1,0 +1,26 @@
+@import '../styles/variables' ;
+.user-form{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: $White;
+    border: 2px solid $White;
+    padding: 0.5rem;
+
+    .form-textarea{
+        width: 75%;
+        textarea{
+            width: 100%;
+        }
+    }
+    .form-img{
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .btn{
+        height: 50%;
+        padding: 5px 1rem;
+    }
+}

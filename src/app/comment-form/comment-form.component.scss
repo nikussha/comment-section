@@ -1,0 +1,32 @@
+@import '../styles/variables';
+@import '../styles/mixins';
+.comment-form {
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    border: $White;
+    background-color: $White;
+    border-radius: 10px;
+    @include media(1300px){
+        width: 70%;
+    }
+    @include media(550px){
+        width: 100%;
+        pad: 0.10rem;
+    }
+    
+
+    .form-textarea {
+        width: 70%;
+
+        textarea {
+            width: 100%;
+        }
+    }
+    .btn{
+        height: 50%;
+        padding: 0.5rem 1.2rem;
+    }
+}

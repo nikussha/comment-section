@@ -1,0 +1,9 @@
+<section class="comment-form p-2">
+  <div class="form-img">
+    <img [src]="'../../assets/' + currentuser!.image.png" alt="" />
+  </div>
+  <div class="form-textarea">
+    <textarea class="p-2" [(ngModel)]="comment"></textarea>
+  </div>
+  <button class="btn btn-primary" (click)="addcomment()">add</button>
+</section>

@@ -1,0 +1,36 @@
+@import '../styles/mixins';
+.comments{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    @include media(1300px){
+        width: 70%;
+    }
+    @include media(960px){
+        width: 80%;
+    }
+    @include media(550px){
+        width: 100%;
+    }
+    
+    
+}
+
+.replies{
+    width:80% ;
+    margin-left: 20%;
+    @include media(890px) {
+            height: auto;
+            width: 90%;
+            margin-left: 10%;
+        }
+    @include media(500px) {
+            height: auto;
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        
+                  
+}
+

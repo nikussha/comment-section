@@ -1,0 +1,33 @@
+<section class="comments" *ngFor="let comment of comments">
+  <app-card
+    (updateEvent)="updateEvent($event)"
+    [comment]="comment"
+    [currentuser]="currentuser"
+    (delete)="deletecontent($event)"
+    (scoreEvent)="updateArray()"
+  ></app-card>
+
+  <div class="replies" *ngIf="comment.replies.length">
+    <div *ngFor="let reply of comment.replies">
+      <app-card
+        (updateEvent)="updateEvent($event)"
+        [comment]="reply"
+        [currentuser]="currentuser"
+        (delete)="deletecontent($event)"
+        (scoreEvent)="updateArray()"
+      >
+      </app-card>
+    </div>
+  </div>
+</section>
+
+<app-comment-form
+  [currentuser]="currentuser"
+  (throwEvent)="getComment($event)"
+></app-comment-form>
+
+<app-modal
+  (canceluserEvent)="cancelEvent()"
+  (deleteuserEvent)="deleteUser()"
+  *ngIf="showModal"
+></app-modal>
